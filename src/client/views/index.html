@@ -24,18 +24,28 @@
 
   <main>
     <h1 class="title">Hello webpack</h1>
+
+    <section>
+      <button id="user-btn" onclick="Client.getUsers()">Get users</button>
+    </section>
+
     <section>
       <form class="" onsubmit="return Client.handleSubmit(event)">
         <input id="name" type="text" name="input" value="" placeholder="Name">
         <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)"
           onsubmit="return Client.handleSubmit(event)">
       </form>
-      <section>
+    </section>
 
-        <section>
-          <strong>Form Results:</strong>
-          <div id="results"></div>
-        </section>
+    <section>
+      <strong>Form Results:</strong>
+      <div id="results"></div>
+    </section>
+
+    <section>
+      <h3>User List:</h3>
+      <ul id="user-list"></ul>
+    </section>
   </main>
 
   <footer>
